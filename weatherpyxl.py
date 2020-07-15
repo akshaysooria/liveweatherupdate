@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 
 from openpyxl import Workbook
 
-workbook_name=r"C:\Users\ar28s\Documents\weatherupdate.xlsx"
+workbook_name="weatherupdate.xlsx"
 wb=load_workbook(workbook_name)
 page=wb.active
 def weather_data(query):

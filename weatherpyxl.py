@@ -8,7 +8,7 @@ workbook_name=r"C:\Users\ar28s\Documents\weatherupdate.xlsx"
 wb=load_workbook(workbook_name)
 page=wb.active
 def weather_data(query):
-	res=requests.get('http://api.openweathermap.org/data/2.5/weather?'+query+'&APPID=b35975e18dc93725acb092f7272cc6b8&units=metric');
+	res=requests.get('http://api.openweathermap.org/data/2.5/weather?'+query+'&APPID=INSERTYOURAPIHERE8&units=metric');
 	return res.json();
 def print_weather(result,city):
 	return [city,result['main']['temp'],result['main']['humidity']]
